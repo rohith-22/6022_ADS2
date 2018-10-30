@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m1/1.1 Graph/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m1/1.1 Graph/Bag.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m1/1.1 Graph/Bag.java:14: Line has trailing spaces. [RegexpSingleline]
