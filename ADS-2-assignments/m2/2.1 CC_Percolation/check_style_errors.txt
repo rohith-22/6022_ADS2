@@ -3,20 +3,6 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:35:3: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:35:26: Parameter G should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:35:32: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:35:35: Parameter s should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:35:39: 's' hides a field. [HiddenField]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:51:20: Parameter G should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:51:26: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:51:29: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:67:28: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:76:31: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:77:9: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/DepthFirstPaths.java:80:69: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 13 errors.
 Starting audit...
 Audit done.

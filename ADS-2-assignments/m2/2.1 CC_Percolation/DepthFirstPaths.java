@@ -1,4 +1,3 @@
-
 /**
  *
  *  @author Robert Sedgewick
@@ -28,16 +27,16 @@ class DepthFirstPaths {
 
   /**
    * Computes a path between {@code s} and .
-   * @param G the graph
-   * @param s the source vertex
+   * @param g the graph
+   * @param source the source vertex
    * @throws IllegalArgumentException unless {@code 0 <= s < V}
    */
-  public DepthFirstPaths(Graph G, int s) {
-    this.s = s;
-    edgeTo = new int[G.V()];
-    marked = new boolean[G.V()];
+  DepthFirstPaths(final Graph g, final int source) {
+    this.s = source;
+    edgeTo = new int[g.V()];
+    marked = new boolean[g.V()];
     validateVertex(s);
-    dfs(G, s);
+    dfs(g, s);
   }
 
   // depth first search from v
@@ -45,15 +44,15 @@ class DepthFirstPaths {
   /**
    * { function_description }.
    *
-   * @param      G     { parameter_description }
+   * @param      g     { parameter_description }
    * @param      v     { parameter_description }
    */
-  private void dfs(Graph G, int v) {
+  private void dfs(final Graph g, final int v) {
     marked[v] = true;
-    for (int w : G.adj(v)) {
+    for (int w : g.adj(v)) {
       if (!marked[w]) {
         edgeTo[w] = v;
-        dfs(G, w);
+        dfs(g, w);
       }
     }
   }
@@ -64,20 +63,21 @@ class DepthFirstPaths {
    * @return {@code true} if there is a path, {@code false} otherwise
    * @throws IllegalArgumentException unless {@code 0 <= v < V}
    */
-  public boolean hasPathTo(int v) {
+  public boolean hasPathTo(final int v) {
     validateVertex(v);
     return marked[v];
   }
   /**
-   * { function_description }.
+   * { Checking the Vertex }.
    *
-   * @param      v     { parameter_description }
+   * @param      v     { Vertex }
    */
-  private void validateVertex(int v) {
-    int V = marked.length;
-    if (v < 0 || v >= V)
+  private void validateVertex(final int v) {
+    int vert = marked.length;
+    if (v < 0 || v >= vert) {
       throw new IllegalArgumentException("vertex " + v
-                                         + " is not between 0 and " +
-                                         (V - 1));
+                                         + " is not between 0 and "
+                                         + (vert - 1));
+    }
   }
 }
