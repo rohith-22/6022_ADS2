@@ -1,18 +1,11 @@
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:5:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:22: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:26: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:34: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:49:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:54: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:56:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:60:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:34: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:38: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Solution.java:46: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Graph.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m2/2.1 CC_Percolation/Graph.java:21: Line is longer than 80 characters (found 101). [LineLength]
