@@ -128,9 +128,9 @@ public class Digraph {
         return edges;
     }
     /**
-     * Validate Vertex.
+     * { function_description }
      *
-     * @param      v
+     * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
         if (v < 0 || v >= vertices) {
