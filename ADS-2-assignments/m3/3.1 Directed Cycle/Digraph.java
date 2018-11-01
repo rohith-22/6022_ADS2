@@ -128,7 +128,7 @@ public class Digraph {
         return edges;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      v     { parameter_description }
      */
