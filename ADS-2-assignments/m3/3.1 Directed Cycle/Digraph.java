@@ -28,7 +28,7 @@ public class Digraph {
      * Initializes an empty digraph with vertices.
      *
      * @param  vertices1 the number of vertices
-     * @throws IllegalArgumentException if 
+     * @throws IllegalArgumentException if
      */
     public Digraph(final int vertices1) {
         if (vertices1 < 0) {
@@ -130,7 +130,7 @@ public class Digraph {
     /**
      * Validate Vertex.
      *
-     * @param      v     
+     * @param      v
      */
     private void validateVertex(final int v) {
         if (v < 0 || v >= vertices) {
@@ -145,7 +145,7 @@ public class Digraph {
      * @param  v the tail vertex
      * @param  w the head vertex
      * @throws IllegalArgumentException unless both
-     * 
+     *
      */
     public void addEdge(final int v, final int w) {
         validateVertex(v);
@@ -196,7 +196,7 @@ public class Digraph {
 
     /**
      * Returns the reverse of the digraph.
-     * 
+     *
      * Complexity: vertices + edges.
      *
      * @return the reverse of the digraph
