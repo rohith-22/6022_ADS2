@@ -1,8 +1,10 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class PageRank {
   Digraph graph;
   int vertices;
   double[] prArray;
+  double[] prArrayTwo;
   Iterable<Integer> adjacent;
   PageRank(final Digraph dG, int v) {
     this.graph = dG;
@@ -11,10 +13,26 @@ class PageRank {
     calculation();
   }
   public void calculation() {
+    final int thousand = 1000;
     double temp = 1 / vertices;
     prArray = new double[vertices];
+    prArrayTwo = new double[vertices];
     for (int i = 0; i < vertices; i++) {
       prArray[i] = (double) 1 / vertices;
+    }
+    System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
+    for (int j = 0; j < thousand; j++) {
+      for (int i = 0; i < vertices; i++) {
+        prArray[i] = 0.0;
+        for (Integer w :  graph.reverse().adj(i)) {
+          prArray[i] += prArrayTwo[w] / graph.outdegree(w);
+
+        }
+      }
+      if (Arrays.equals(prArray, prArrayTwo)) {
+        break;
+      }
+      System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
 
     }
   }
