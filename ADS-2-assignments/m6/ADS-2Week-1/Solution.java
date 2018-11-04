@@ -69,7 +69,7 @@ public final class Solution {
     // Create page rank object and pass the graph object to the constructor
     PageRank objPR = new PageRank(graph, noOfVertices);
     for (int i = 0; i < noOfVertices; i++) {
-      System.out.println(objPR.getPR(i));
+      System.out.println(i + " - " + objPR.getPR(i));
     }
     // print the page rank object
 
