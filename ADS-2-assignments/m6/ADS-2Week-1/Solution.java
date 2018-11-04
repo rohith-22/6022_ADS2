@@ -5,32 +5,32 @@ import java.util.Arrays;
  */
 class PageRank {
   /**
-   * variable digraph object;
+   * variable digraph object.
    */
-  Digraph graph;
+  private Digraph graph;
   /**
    * variable int vertices.
    */
-  int vertices;
+  private int vertices;
   /**
    * page rank array.
    */
-  double[] prArray;
+  private double[] prArray;
   /**
    * pagerank array2.
    */
-  double[] prArrayTwo;
+  private double[] prArrayTwo;
   /**
    * iterable.
    */
-  Iterable<Integer> adjacent;
+  private Iterable<Integer> adjacent;
   /**
    * Constructs the object.
    *
    * @param      dG    The d g
    * @param      v     vertices.
    */
-  PageRank(final Digraph dG, int v) {
+  PageRank(final Digraph dG, final int v) {
     this.graph = dG;
     this.vertices = v;
 
@@ -81,7 +81,7 @@ class PageRank {
    *
    * @return     The pr.
    */
-  public double getPR(int v) {
+  public double getPR(final int v) {
     return prArray[v];
   }
 
