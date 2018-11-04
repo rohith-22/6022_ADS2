@@ -38,7 +38,7 @@ class PageRank {
   }
   /**
    * claculation of pr is done here.
-   * time complexity is 1000 * vertices.
+   * time complexity is 1000 * vertices + N^2.
    */
   public void calculation() {
     final int thousand = 1000;
@@ -48,14 +48,20 @@ class PageRank {
     for (int i = 0; i < vertices; i++) {
       prArray[i] = (double) 1 / vertices;
     }
+    for (int i = 0; i < vertices; i++) {
+      if (graph.outdegree(i) == 0) {
+        for (int j = 0; j < vertices; j++) {
+          if (j != i) {
+            graph.addEdge(i, j);
+          }
+        }
+      }
+    }
     System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
     for (int j = 0; j < thousand; j++) {
       for (int i = 0; i < vertices; i++) {
         prArray[i] = 0.0;
         for (Integer w :  graph.reverse().adj(i)) {
-          if (graph.outdegree(w) == 0) {
-            prArray[i] += prArrayTwo[w] / (vertices - 1);
-          }
           prArray[i] += prArrayTwo[w] / graph.outdegree(w);
 
         }
@@ -80,16 +86,28 @@ class PageRank {
   }
 
 }
-
+/**
+ * Class for web search.
+ */
 class WebSearch {
 
 }
 
-
+/**
+ * solution class.
+ */
 public final class Solution {
+  /**
+   * Constructs the object.
+   */
   private Solution() {
 
   }
+  /**
+   * main function.
+   *
+   * @param      args  The arguments
+   */
   public static void main(final String[] args) {
     // read the first line of the input to get the number of vertices
     Scanner sc = new Scanner(System.in);
@@ -101,7 +119,8 @@ public final class Solution {
     for (int i = 0; i < noOfVertices; i++) {
       String[] tokens = sc.nextLine().split(" ");
       for (int j = 1; j < tokens.length; j++) {
-        graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
+        graph.addEdge(Integer.parseInt(tokens[0]),
+                      Integer.parseInt(tokens[j]));
       }
     }
     System.out.println(graph);

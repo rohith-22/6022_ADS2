@@ -6,13 +6,9 @@ Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:22:12: Variable 'prArrayTwo' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:26:21: Variable 'adjacent' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:33:30: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:78:23: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:84: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:89: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:90:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:93:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:84:23: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
 Starting audit...
