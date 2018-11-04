@@ -1,14 +1,13 @@
 
 import java.util.Scanner;
 /**
- * solution class
+ * solution class.
  */
 public final class Solution {
     /**.
      * Constructs the object.
      */
     private Solution() {
-        
     }
     /**.
      * main function.
@@ -31,7 +30,7 @@ public final class Solution {
                     String str = wn.sap(tokens[0], tokens[1]);
                     int id = wn.distance(tokens[0], tokens[1]);
                     System.out.println("distance = " + id
-                        + ", ancestor = " + str);
+                                       + ", ancestor = " + str);
                 }
             }
         } catch (Exception e) {
