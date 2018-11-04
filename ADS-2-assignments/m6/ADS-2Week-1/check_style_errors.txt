@@ -13,12 +13,12 @@ Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:9:3: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:9:30: Parameter v should be final. [FinalParameters]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:15:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:39:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:39:23: Parameter v should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:45: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:50: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:51:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:54:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:48:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:48:23: Parameter v should be final. [FinalParameters]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:54: Missing a Javadoc comment. [JavadocType]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:59: Missing a Javadoc comment. [JavadocType]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:60:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:63:3: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 20 errors.
 Starting audit...

@@ -20,6 +20,15 @@ class PageRank {
     for (int i = 0; i < vertices; i++) {
       prArray[i] = (double) 1 / vertices;
     }
+    for (int i = 0; i < vertices; i++) {
+      if (graph.outdegree(i) == 0) {
+        for (int j = 0; j < vertices; j++) {
+          if (j != i) {
+            graph.addEdge(i, j);
+          }
+        }
+      }
+    }
     System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
     for (int j = 0; j < thousand; j++) {
       for (int i = 0; i < vertices; i++) {
