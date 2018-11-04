@@ -1,101 +1,88 @@
-/**.
+/**
  * Class for sap.
  */
 public class SAP {
-    /**.
-     * { var_description }
+    /**
+     * digraph.
      */
-    private Digraph dig;
-    /**.
-     * { var_description }
+    private Digraph dg;
+    /**
+     * distance.
      */
-    private int ancestor = -1;
-    /**.
-     * { var_description }
+    private int distance = Integer.MAX_VALUE;
+    /**
+     * ancestor.
      */
-    private int len = Integer.MAX_VALUE;
-    /**.
+    private int ancestor1 = -1;
+    /**
      * Constructs the object.
      *
-     * @param      g     { parameter_description }
+     * @param      digraph  The digraph
      */
-    public SAP(final Digraph g) {
-        dig = g;
+    public SAP(final Digraph digraph) {
+        dg = digraph;
     }
-    /**.
-     * { function_description }
-     * time complexity is 1 in avg case
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+    /**
+     * length.
      *
-     * @return     { description_of_the_return_value }
+     * @param      v    integer variable.
+     * @param      w    integer variable.
+     *
+     * @return  distance.
      */
     public int length(final int v, final int w) {
-        int a = ancestor(v, w);
-        if (a == -1) {
-            return -1;
-        } else {
-            return len;
-        }
+        ancestor(v, w);
+        return distance;
     }
-    /**.
-     * { function_description }
-     * time complexity is O(N).
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+    /**
+     * ancestor.
      *
-     * @return     { description_of_the_return_value }
+     * @param      v  integer variable.
+     * @param      w  integer variable.
+     *
+     * @return    ancestor.
      */
     public int ancestor(final int v, final int w) {
-        BreadthFirstSearch bfsv = new BreadthFirstSearch(dig, v);
-        BreadthFirstSearch bfsw = new BreadthFirstSearch(dig, w);
-        for (int i = 0; i < dig.vert(); i++) {
-            if (bfsv.hasPathTo(i) && bfsw.hasPathTo(i)) {
-                int vlen = bfsv.distTo(i);
-                int wlen = bfsw.distTo(i);
-                if (vlen + wlen < len) {
-                    len = vlen + wlen;
-                    ancestor = i;
+        BreadthFirstDirectedPaths b1 = new BreadthFirstDirectedPaths(dg, v);
+        BreadthFirstDirectedPaths b2 = new BreadthFirstDirectedPaths(dg, w);
+        for (int vertices = 0; vertices < dg.v(); vertices++) {
+            if (b1.hasPathTo(vertices) && b2.hasPathTo(vertices)) {
+                int newdistance = b1.distTo(vertices) + b2.distTo(vertices);
+                if (newdistance < distance) {
+                    distance = newdistance;
+                    ancestor1 = vertices;
                 }
             }
         }
-        return ancestor;
+        return ancestor1;
     }
-    /**.
-     * { function_description }
-     * time complexity is 1 in avg case
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+    /**
+     * length.
      *
-     * @return     { description_of_the_return_value }
+     * @param      v   integer variable.
+     * @param      w   integer variable.
+     *
+     * @return length.
      */
     public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
-        int a = ancestor(v, w);
-        if (a == -1) {
-            return -1;
-        } else {
-            return len;
-        }
+        ancestor(v, w);
+        return distance;
     }
-    /**.
-     * { function_description }
-     * time complexity is O(N^2)
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+    /**
+     * ancestor.
      *
-     * @return     { description_of_the_return_value }
+     * @param      v   integer variable.
+     * @param      w   integer variable.
+     *
+     * @return ancestor.
      */
     public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
-        for (int i : v) {
-            for (int j : w) {
-                ancestor(i, j);
+        for (int v1 : v) {
+            for (int w1 : w) {
+                ancestor1 = ancestor(v1, w1);
             }
         }
-        return ancestor;
+        return ancestor1;
     }
-
-    // do unit testing of this class
-    // public static void main(String[] args)
 }
-
 

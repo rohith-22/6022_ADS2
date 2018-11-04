@@ -1,148 +1,166 @@
-/**.
- * { item_description }
- */
-import java.io.File;
-/**.
- * { item_description }
- */
-
-import java.util.Scanner;
-/**.
- * { item_description }
- */
 import java.util.ArrayList;
-/**.
+import java.io.File;
+import java.util.HashMap;
+import java.util.Scanner;
+/**
  * Class for word net.
  */
 public class WordNet {
-    /**.
-     * { var_description }
+    /**
+     * hash map.
      */
-    private SAP sap;
-    /**.
-     * { var_description }
+    private HashMap<String, ArrayList<Integer>> h = new
+    HashMap<String, ArrayList<Integer>>();
+    /**
+     * hashmap.
+     */
+    private HashMap<Integer, String> h2 = new
+    HashMap<Integer, String>();
+    /**
+     * digraph.
      */
     private Digraph dg;
-    /**.
-     * { item_description }
+    /**
+     * SAP variable.
      */
-    private HashTable<String, ArrayList<Integer>> htable;
-    /**.
-     * { var_description }
+    private SAP sap;
+    /**
+     * has cycle variable.
      */
-    private HashTable<Integer, String> htable1;
-    /**.
-     * { var_description }
+    private boolean hasCycle = false;
+    /**
+     * has multiple roots variable.
      */
-    private int ver = 0;
-    /**.
+    private boolean hasMultipleRoots = false;
+    /**
+     * Gets the digraph.
+     *
+     * @return     The digraph.
+     */
+    public Digraph getDigraph() {
+        return this.dg;
+    }
+    /**
+     * get hasCycle.
+     *
+     * @return   boolean.
+     */
+    public boolean gethasCycle() {
+        return this.hasCycle;
+    }
+    /**
+     * hasmultipleroots.
+     *
+     * @return  boolean.
+     */
+    public boolean gethasMultipleRoots() {
+        return this.hasMultipleRoots;
+    }
+    /**
      * Constructs the object.
-     * @throws     Exception  { exception_description }
+     *
      * @param      synsets    The synsets
      * @param      hypernyms  The hypernyms
      */
-    WordNet(final String synsets, final String hypernyms) throws Exception {
-        readSynsets(synsets);
-        readHypernyms(hypernyms);
-        // dg = new Digraph(ver);
-        // readHypernyms(hypernyms);
-        // sap = new SAP(dg);
-    }
-    /**.
-     * Reads synsets.
-     *
-     * @param      synsets    The synsets
-     *
-     * @throws     Exception  { exception_description }
-     */
-    public void readSynsets(final String synsets) throws Exception {
-        htable = new HashTable<String, ArrayList<Integer>>();
-        htable1 = new HashTable<Integer, String>();
-        int id = 0;
-            Scanner synIn = new Scanner(new File(synsets));
-            while (synIn.hasNextLine()) {
-                ver++;
-                // String line = synIn.readString();
-                String[] tokens = synIn.nextLine().split(",");
-                id = Integer.parseInt(tokens[0]);
-                htable1.put(id, tokens[1]);
-                String[] word = tokens[1].split(" ");
-                for (int i = 0; i < word.length; i++) {
-                    if (htable.contains(word[i])) {
-                        ArrayList<Integer> list = htable.get(word[i]);
-                        list.add(id);
-                        htable.put(word[i], list);
+    public WordNet(final String synsets, final String hypernyms) {
+        try {
+            File fileOne = new File(
+                "Files/" + synsets);
+            Scanner fOne = new Scanner(fileOne);
+            File fileTwo = new File("Files/" + hypernyms);
+            Scanner fTwo = new Scanner(fileTwo);
+            while (fOne.hasNextLine()) {
+                String[] tokens = fOne.nextLine().split(",");
+                h2.put(Integer.parseInt(tokens[0]), tokens[1]);
+                String[] words = tokens[1].split(" ");
+                for (int i = 0; i < words.length; i++) {
+                    if (h.containsKey(words[i])) {
+                        ArrayList<Integer> arraylist = h.get(words[i]);
+                        arraylist.add(Integer.parseInt(tokens[0]));
                     } else {
-                        ArrayList<Integer> list = new ArrayList<Integer>();
-                        list.add(Integer.parseInt(tokens[0]));
-                        htable.put(word[i], list);
+                        ArrayList<Integer> arraylist = new ArrayList<Integer>();
+                        arraylist.add(Integer.parseInt(tokens[0]));
+                        h.put(words[i], arraylist);
                     }
                 }
             }
-    }
-    /**.
-     * Reads hypernyms.
-     *
-     * @param      hypernyms  The hypernyms
-     *
-     * @throws     Exception  { exception_description }
-     */
-    public void readHypernyms(final String hypernyms) throws Exception {
-        dg = new Digraph(ver);
-        Scanner hyperIn = new Scanner(new File(hypernyms));
-        while (hyperIn.hasNextLine()) {
-            // String line = ;
-            String[] tokens = hyperIn.nextLine().split(",");
-            for (int i = 1; i < tokens.length; i++) {
-                dg.addEdge(Integer.parseInt(tokens[0]),
-                 Integer.parseInt(tokens[i]));
+            dg = new Digraph(h.size());
+            while (fTwo.hasNextLine()) {
+                String[] tokens = fTwo.nextLine().split(",");
+                for (int i = 1; i < tokens.length; i++) {
+                    dg.addEdge(Integer.parseInt(tokens[0]),
+                               Integer.parseInt(tokens[i]));
+                }
             }
+        } catch (Exception e) {
+            System.out.println(e);
         }
-    }
-    /**.
-     * { function_description }
-     */
-    public void display() {
-        int c = 0;
         DirectedCycle dc = new DirectedCycle(dg);
-        for (int i = 0; i < ver; i++) {
-            if (dg.outdegree(i) == 0) {
-                c++;
-            }
-        }
-        if (c > 1) {
-            System.out.println("Multiple roots");
-        } else if (dc.hasCycle()) {
-            System.out.println("Cycle detected");
-        } else {
-            System.out.println(dg);
+        if (dc.hasCycle()) {
+            hasCycle = true;
         }
     }
-    /**.
-     * { function_description }
+    /**
+     * check multiple roots method.
+     */
+    public void checkMultipleRoots() {
+        int roots = 0;
+        for (int i = 0; i < dg.v(); i++) {
+            if (dg.outdegree(i) == 0) {
+                roots++;
+            }
+        }
+        if (roots != 1) {
+            hasMultipleRoots = true;
+            System.out.println("Multiple roots");
+        }
+    }
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
+    public boolean isNoun(final String word) {
+        // for (String s : h.getKeys()) {
+        //     if (s.equals(word)) {
+        //         return true;
+        //     }
+        // }
+        return true;
+    }
+    /**
+     * distance.
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b
      *
-     * @return     { description_of_the_return_value }
+     * @return distance between nouns.
      */
     public int distance(final String nounA, final String nounB) {
+        ArrayList id1 = h.get(nounA);
+        ArrayList id2 = h.get(nounB);
         sap = new SAP(dg);
-        int dist = sap.length(htable.get(nounA), htable.get(nounB));
-        return dist;
+        return sap.length(id1, id2);
     }
-    /**.
-     * { function_description }
+    /**
+     * sap method.
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b
      *
-     * @return     { description_of_the_return_value }
+     * @return string.
      */
     public String sap(final String nounA, final String nounB) {
+        ArrayList<Integer> id1 = h.get(nounA);
+        ArrayList<Integer> id2 = h.get(nounB);
         sap = new SAP(dg);
-        String str = "";
-        int id = sap.ancestor(htable.get(nounA), htable.get(nounB));
-        return htable1.get(id);
+        // System.out.println(id1);
+        // System.out.println(id2);
+        int ans = sap.ancestor(id1, id2);
+        return h2.get(ans);
     }
+
 }
+

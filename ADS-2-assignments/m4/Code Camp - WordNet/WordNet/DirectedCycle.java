@@ -1,48 +1,52 @@
-/**.
+
+/**
  * Class for directed cycle.
  */
 public class DirectedCycle {
-    /**.
-     * { var_description }
+    /**
+     * marked array of boolean type.
      */
     private boolean[] marked;
-    /**.
-     * { var_description }
+    /**
+     * edgeTo array of integer type.
      */
     private int[] edgeTo;
-    /**.
-     * { var_description }
+    /**
+     * onStack array of boolean type.
      */
     private boolean[] onStack;
-    /**.
-     * { var_description }
+    /**
+     * directed cycle.
      */
     private Stack<Integer> cycle;
-    /**.
-     * Constructs the object.
-     *
-     * @param      g     { parameter_description }
+    /**
+     * Determines whether the digraph {@code G} has a directed cycle and, if so,
+     * finds such a cycle.
+     * Time complexity : O(V).
+     * @param g the digraph
      */
     public DirectedCycle(final Digraph g) {
-        marked  = new boolean[g.vert()];
-        onStack = new boolean[g.vert()];
-        edgeTo  = new int[g.vert()];
-        for (int v = 0; v < g.vert(); v++) {
-            if (!marked[v] && cycle == null) {
-                dfs(g, v);
+        marked  = new boolean[g.v()];
+        onStack = new boolean[g.v()];
+        edgeTo  = new int[g.v()];
+        for (int i = 0; i < g.v(); i++) {
+            if (!marked[i] && cycle == null) {
+                dfs(g, i);
             }
         }
     }
-    /**.
-     * { function_description }
-     * time complexity is 1 in avg case
-     * @param      g     { parameter_description }
-     * @param      v     { parameter_description }
+    /**
+     * dfs method.
+     *Time complexity : O(V).
+     * @param      g digraph
+     * @param      v integer variable.
      */
-    private void dfs(final Digraph g, final int v) {
+    public void dfs(final Digraph g, final int v) {
         onStack[v] = true;
         marked[v] = true;
         for (int w : g.adj(v)) {
+
+            // short circuit if directed cycle found
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
@@ -60,28 +64,33 @@ public class DirectedCycle {
         }
         onStack[v] = false;
     }
-/**.
- * Determines if it has cycle.
- * time complexity is 1 in avg case
- * @return     True if has cycle, False otherwise.
- */
+    /**
+     * Does the digraph have a directed cycle?
+     * Time complexity : O(1).
+     * @return {@code true} if
+     *  the digraph has a directed cycle, {@code false} otherwise
+     */
     public boolean hasCycle() {
         return cycle != null;
     }
-    /**.
-     *
-     *
-     * @return     { description_of_the_return_value }
+    /**
+     * Returns a directed cycle if
+     * the digraph has a directed cycle, and {@code null} otherwise.
+     * Time complexity : O(V).
+     * @return a directed cycle (as an iterable)
+     * if the digraph has a directed cycle,
+     *    and {@code null} otherwise
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
-    /**.
-     * { function_description }
-     * time complexity is O(N).
-     * @return     { description_of_the_return_value }
+    /**
+     * check method.
+     *Time complexity : O(V).
+     * @return true or false.
      */
     private boolean check() {
+
         if (hasCycle()) {
             // verify cycle
             int first = -1, last = -1;
@@ -92,28 +101,14 @@ public class DirectedCycle {
                 last = v;
             }
             if (first != last) {
-                System.err.printf("cycle begins with %d and ends with %d\n",
-                 first, last);
+                System.err.printf(
+                    "cycle begins with %d and ends with %d\n", first, last);
                 return false;
             }
         }
         return true;
     }
-
-        // In in = new In(args[0]);
-        // Digraph G = new Digraph(in);
-
-        // DirectedCycle finder = new DirectedCycle(G);
-        // if (finder.hasCycle()) {
-        //     StdOut.print("Directed cycle: ");
-        //     for (int v : finder.cycle()) {
-        //         StdOut.print(v + " ");
-        //     }
-        //     StdOut.println();
-        // }
-
-        // else {
-        //     StdOut.println("No directed cycle");
-        // }
-        // StdOut.println();
 }
+
+
+
