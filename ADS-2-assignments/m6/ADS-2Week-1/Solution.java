@@ -1,17 +1,45 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for page rank.
+ */
 class PageRank {
+  /**
+   * variable digraph object;
+   */
   Digraph graph;
+  /**
+   * variable int vertices.
+   */
   int vertices;
+  /**
+   * page rank array.
+   */
   double[] prArray;
+  /**
+   * pagerank array2.
+   */
   double[] prArrayTwo;
+  /**
+   * iterable.
+   */
   Iterable<Integer> adjacent;
+  /**
+   * Constructs the object.
+   *
+   * @param      dG    The d g
+   * @param      v     vertices.
+   */
   PageRank(final Digraph dG, int v) {
     this.graph = dG;
     this.vertices = v;
 
     calculation();
   }
+  /**
+   * claculation of pr is done here.
+   * time complexity is 1000 * vertices.
+   */
   public void calculation() {
     final int thousand = 1000;
     double temp = 1 / vertices;
@@ -20,20 +48,14 @@ class PageRank {
     for (int i = 0; i < vertices; i++) {
       prArray[i] = (double) 1 / vertices;
     }
-    for (int i = 0; i < vertices; i++) {
-      if (graph.outdegree(i) == 0) {
-        for (int j = 0; j < vertices; j++) {
-          if (j != i) {
-            graph.addEdge(i, j);
-          }
-        }
-      }
-    }
     System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
     for (int j = 0; j < thousand; j++) {
       for (int i = 0; i < vertices; i++) {
         prArray[i] = 0.0;
         for (Integer w :  graph.reverse().adj(i)) {
+          if (graph.outdegree(w) == 0) {
+            prArray[i] += prArrayTwo[w] / (vertices - 1);
+          }
           prArray[i] += prArrayTwo[w] / graph.outdegree(w);
 
         }
@@ -45,6 +67,14 @@ class PageRank {
 
     }
   }
+  /**
+   * Gets the pr.
+   * time complexity is o(1).
+   *
+   * @param      v     vertices.
+   *
+   * @return     The pr.
+   */
   public double getPR(int v) {
     return prArray[v];
   }
