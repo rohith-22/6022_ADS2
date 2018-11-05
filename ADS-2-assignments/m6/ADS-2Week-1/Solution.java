@@ -34,7 +34,7 @@ class PageRank {
   }
   /**
    * claculation of pr is done here.
-   * time complexity is O(2V + (1000 * V^2 * E ) + V^2).
+   * time complexity is O(2V + 2V^2 + (1000 * V^2 * E )).
    */
   public void calculation() {
     final int thousand = 1000;
@@ -44,27 +44,30 @@ class PageRank {
     for (int i = 0; i < vertices; i++) {
       prArray[i] = (double) 1 / vertices;
     }
-    // for (int i = 0; i < vertices; i++) {
-    //   if (graph.outdegree(i) == 0) {
-    //     for (int j = 0; j < vertices; j++) {
-    //       if (j != i) {
-    //         graph.addEdge(i, j);
-    //       }
-    //     }
-    //   }
-    // }
-    // System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
-    // for (int j = 0; j < thousand; j++) {
-    //   for (int i = 0; i < vertices; i++) {
-    //     prArray[i] = 0.0;
-    //     for (Integer w :  graph.reverse().adj(i)) {
-    //       prArray[i] += prArrayTwo[w] / graph.outdegree(w);
+    for (int i = 0; i < vertices; i++) {
+      if (graph.outdegree(i) == 0) {
+        for (int j = 0; j < vertices; j++) {
+          if (j != i) {
+            graph.addEdge(i, j);
+          }
+        }
+      }
+    }
+    Digraph graphRev = graph.reverse();
 
-    //     }
-    //   }
-    //   System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
+    System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
+    
+    for (int j = 0; j < thousand; j++) {
+      for (int i = 0; i < vertices; i++) {
+        prArray[i] = 0.0;
+        for (Integer w :  graphRev.adj(i)) {
+          prArray[i] += prArrayTwo[w] / graph.outdegree(w);
 
-    // }
+        }
+      }
+      System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
+
+    }
   }
   /**
    * Gets the pr.
