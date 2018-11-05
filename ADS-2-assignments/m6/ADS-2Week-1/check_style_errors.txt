@@ -1,12 +1,7 @@
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:61: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:105: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:120: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m6/ADS-2Week-1/Solution.java:133: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
