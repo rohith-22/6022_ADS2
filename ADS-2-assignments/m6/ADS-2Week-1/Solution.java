@@ -58,13 +58,10 @@ class PageRank {
 			for (int i = 0; i < vertices; i++) {
 				prArray[i] = 0.0;
 				for (Integer w :  graph.reverse().adj(i)) {
-					prArray[i] += prArray[w] / graph.outdegree(w);
+					prArray[i] += prArrayTwo[w] / graph.outdegree(w);
 
 				}
 			}
-			// if (Arrays.equals(prArray, prArrayTwo)) {
-			// 	break;
-			// }
 			System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
 
 		}
