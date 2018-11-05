@@ -53,7 +53,7 @@ class PageRank {
 				}
 			}
 		}
-		// System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
+		System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
 		for (int j = 0; j < thousand; j++) {
 			for (int i = 0; i < vertices; i++) {
 				prArray[i] = 0.0;
@@ -65,7 +65,7 @@ class PageRank {
 			// if (Arrays.equals(prArray, prArrayTwo)) {
 			// 	break;
 			// }
-			// System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
+			System.arraycopy(prArray, 0, prArrayTwo, 0, vertices);
 
 		}
 	}
