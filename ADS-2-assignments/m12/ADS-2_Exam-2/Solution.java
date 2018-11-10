@@ -74,7 +74,8 @@ public final class Solution {
         System.out.println(objectDSPOne.distTo(viaPath)
                            + objectDSPTwo.distTo(destinationA));
         System.out.println(objectDSPOne.pathTo(viaPath)
-                           + "" + objectDSPTwo.pathTo(destinationA) + destinationA);
+                           + "" + objectDSPTwo.pathTo(destinationA)
+                           + destinationA);
       } else {
         System.out.println("No Path Found.");
       }
