@@ -13,7 +13,7 @@ public class EdgeWeightedGraph {
     /**
      * { item_description }.
      */
-    private String NEWLINE = System.getProperty("line.separator");
+    private String newLine = System.getProperty("line.separator");
     /**
      * {Bag array of type Edge}.
      */
@@ -113,13 +113,13 @@ public class EdgeWeightedGraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertices + " vertices " + edges + " edges" + NEWLINE);
+        s.append(vertices + " vertices " + edges + " edges" + newLine);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
                 s.append(e + "  ");
             }
-            s.append(NEWLINE);
+            s.append(newLine);
         }
         return s.toString() + "\n";
     }
