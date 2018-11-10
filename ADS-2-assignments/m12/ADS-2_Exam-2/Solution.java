@@ -65,17 +65,19 @@ public final class Solution {
       int sourceA = Integer.parseInt(tokensTwo[0]);
       int viaPath = Integer.parseInt(tokensTwo[1]);
       int destinationA = Integer.parseInt(tokensTwo[2]);
-      DijkstraUndirectedSP objectDSPTwo =
+      DijkstraUndirectedSP objectDSPOne =
         new DijkstraUndirectedSP(edgeGraph, sourceA);
-      if (objectDSPTwo.hasPathTo(destinationA)) {
-        System.out.println(objectDSPTwo.distTo(viaPath)
+      DijkstraUndirectedSP objectDSPTwo =
+        new DijkstraUndirectedSP(edgeGraph, viaPath);
+
+      if (objectDSPOne.hasPathTo(destinationA)) {
+        System.out.println(objectDSPOne.distTo(viaPath)
                            + objectDSPTwo.distTo(destinationA));
-        System.out.println(objectDSPTwo.pathTo(viaPath) + "" +objectDSPTwo.pathTo(destinationA));
+        System.out.println(objectDSPOne.pathTo(viaPath) + "" + objectDSPTwo.pathTo(destinationA));
       } else {
         System.out.println("No Path Found.");
       }
       break;
-
     default:
       break;
     }

@@ -1,8 +1,7 @@
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:73: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:73:63: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:76: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
