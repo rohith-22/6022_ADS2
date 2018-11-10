@@ -61,7 +61,17 @@ public final class Solution {
       // third is the destination.
       // If the path exists print the distance between them.
       // Other wise print "No Path Found."
-      System.out.println("No Path Found.");
+      String[] tokensTwo = scan.nextLine().split(" ");
+      int sourceTwo = Integer.parseInt(tokensTwo[0]);
+      int destinationTwo = Integer.parseInt(tokensTwo[1]);
+      DijkstraUndirectedSP objectDSPTwo =
+        new DijkstraUndirectedSP(edgeGraph, sourceTwo);
+      if (objectDSPTwo.hasPathTo(destinationTwo)) {
+        System.out.println(objectDSPTwo.distTo(destinationTwo));
+        System.out.println(objectDSPTwo.pathTo(destinationTwo));
+      } else {
+        System.out.println("No Path Found.");
+      }
       break;
 
     default:
