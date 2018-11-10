@@ -70,11 +70,11 @@ public final class Solution {
       DijkstraUndirectedSP objectDSPTwo =
         new DijkstraUndirectedSP(edgeGraph, viaPath);
 
-      if (objectDSPOne.hasPathTo(viaPath)) {
+      if (objectDSPOne.hasPathTo(destinationA)) {
         System.out.println(objectDSPOne.distTo(viaPath)
                            + objectDSPTwo.distTo(destinationA));
         System.out.println(objectDSPOne.pathTo(viaPath)
-                           + "" + objectDSPTwo.pathTo(destinationA));
+                           + "" + objectDSPTwo.pathTo(destinationA) + destinationA);
       } else {
         System.out.println("No Path Found.");
       }
