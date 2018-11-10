@@ -24,7 +24,6 @@ public final class Solution {
 			double weight = Double.parseDouble(tokens[2]);
 			Edge e = new Edge(a, b, weight);
 			edgeGraph.addEdge(e);
-			edges--;
 		}
 		String caseToGo = scan.nextLine();
 		switch (caseToGo) {

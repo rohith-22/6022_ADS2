@@ -102,4 +102,22 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append(vertices + " vertices " + edges + " edges");
+        
+        for (int v = 0; v < vertices; v++) {
+            s.append(v + ": ");
+            for (Edge e : adj[v]) {
+                s.append(e + "  ");
+            }
+            // System.out.println();
+        }
+        return s.toString() + "\n";
+    }
 }
