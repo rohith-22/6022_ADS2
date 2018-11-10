@@ -63,7 +63,8 @@ public final class Solution {
       // Other wise print "No Path Found."
       String[] tokensTwo = scan.nextLine().split(" ");
       int sourceTwo = Integer.parseInt(tokensTwo[0]);
-      int destinationTwo = Integer.parseInt(tokensTwo[1]);
+      int viaPath = Integer.parseInt(tokensTwo[1]);
+      int destinationTwo = Integer.parseInt(tokensTwo[2]);
       DijkstraUndirectedSP objectDSPTwo =
         new DijkstraUndirectedSP(edgeGraph, sourceTwo);
       if (objectDSPTwo.hasPathTo(destinationTwo)) {
