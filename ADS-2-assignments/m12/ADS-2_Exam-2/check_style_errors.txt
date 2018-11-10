@@ -2,9 +2,9 @@ Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:12:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:36: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:43: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:44: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:37: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:44: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/Solution.java:45: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 6 errors.
 Starting audit...
@@ -14,9 +14,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:113: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
