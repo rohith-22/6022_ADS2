@@ -12,7 +12,7 @@ class LsdSort {
   }
   /**
     * Rearranges the array of W-character strings in ascending order.
-    *
+    * time complexity for this method is O(W * N)
     * @param a the array to be sorted
     * @param w the number of characters per string
     * @return           returns The sorted Array.
@@ -60,7 +60,7 @@ public final class Solution {
   }
   /**
    * main function handle test cases.
-   *
+   * Time complexity of main function is O(N + W*N)
    * @param      args  The arguments
    */
   public static void main(final String[] args) {
