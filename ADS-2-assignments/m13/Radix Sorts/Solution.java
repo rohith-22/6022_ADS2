@@ -15,6 +15,7 @@ class LsdSort {
     *
     * @param a the array to be sorted
     * @param w the number of characters per string
+    * @return           returns The sorted Array.
     */
   public String[] sort(final String[] a, final int w) {
     int n = a.length;
@@ -52,11 +53,17 @@ class LsdSort {
  */
 public final class Solution {
   /**
+   * Constructs the object.
+   */
+  private Solution() {
+
+  }
+  /**
    * main function handle test cases.
    *
    * @param      args  The arguments
    */
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Scanner sc = new Scanner(System.in);
     int noOfInputs = Integer.parseInt(sc.nextLine());
     String[] arrayOfInputs = new String[noOfInputs];
