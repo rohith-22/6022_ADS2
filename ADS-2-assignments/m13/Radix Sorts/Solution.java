@@ -62,6 +62,6 @@ public final class Solution {
       arrayOfInputs[i] = sc.nextLine();
     }
     arrayOfInputs = new LsdSort().sort(arrayOfInputs, arrayOfInputs[0].length());
-
+    System.out.println(Arrays.toString(arrayOfInputs));
   }
 }
