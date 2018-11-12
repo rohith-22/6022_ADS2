@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:7:3: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:7:21: Name 'BITS_PER_BYTE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:20: Expected @return tag. [JavadocMethod]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:22:9: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:22:13: '256' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:29: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:33: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:37: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:41: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:50:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:56:27: Parameter args should be final. [FinalParameters]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m13/Radix Sorts/Solution.java:64: Line is longer than 80 characters (found 81). [LineLength]
+Audit done.
+Checkstyle ends with 14 errors.
