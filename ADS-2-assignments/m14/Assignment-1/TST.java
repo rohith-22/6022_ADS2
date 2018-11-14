@@ -265,7 +265,8 @@ public class TST<Value> {
    * @param      queue    The queue
    */
   private void collect(final Node<Value> x, final StringBuilder prefix,
-                       final int i, final String pattern, final Queue<String> queue) {
+                       final int i, final String pattern,
+                       final Queue<String> queue) {
     if (x == null) {
       return;
     }
