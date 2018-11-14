@@ -27,7 +27,7 @@ public class TST<Value> {
          */
         private Node<Value> left, mid, right;
         /**
-         * varaible value
+         * varaible value.
          */
         private Value val;
     }
@@ -119,7 +119,7 @@ public class TST<Value> {
      * with the new value if the key is already in the symbol table.
      * If the value is , this effectively deletes the key
      * from the symbol table.
-     * Time complexity of this fuctiomn is N+logN
+     * Time complexity of this fuctiomn is N+logN.
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
