@@ -25,8 +25,16 @@ Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:71:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:71:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:71:28: Parameter word should be final. [FinalParameters]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:78:30: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:79:30: '4' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:81:30: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:83:30: '6' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:84:40: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:85:30: '7' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:86:40: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:88:40: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
