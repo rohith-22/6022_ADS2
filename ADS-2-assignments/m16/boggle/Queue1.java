@@ -37,7 +37,7 @@ import java.util.NoSuchElementException;
  *
  *  @param <Item> the generic type of an item in this queue
  */
-public class Queue<Item> implements Iterable<Item> {
+ class Queue1<Item> implements Iterable<Item> {
     private Node<Item> first;    // beginning of queue
     private Node<Item> last;     // end of queue
     private int n;               // number of elements on queue
@@ -51,7 +51,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Initializes an empty queue.
      */
-    public Queue() {
+    public Queue1() {
         first = null;
         last  = null;
         n = 0;
