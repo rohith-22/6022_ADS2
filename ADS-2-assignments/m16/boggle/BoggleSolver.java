@@ -21,15 +21,15 @@ public class BoggleSolver {
 		}
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
-				boolean[][] marked = new boolean[board.rows()][board.cols()];
-				dfs(board, i, j, marked, "", validWords);
+				boolean[][] markedArray = new boolean[board.rows()][board.cols()];
+				dfs(board, i, j, markedArray, "", validWords);
 			}
 		}
 
 		return validWords;
 	}
-	private void dfs(BoggleBoard board, int row, int col, boolean[][] marked, String prefix, Set<String> set) {
-		if (marked[row][col]) {
+	private void dfs(BoggleBoard board, int row, int col, boolean[][] markedArray, String prefix, Set<String> set) {
+		if (markedArray[row][col]) {
 			return;
 		}
 
@@ -50,7 +50,7 @@ public class BoggleSolver {
 			set.add(word);
 		}
 
-		marked[row][col] = true;
+		markedArray[row][col] = true;
 
 		for (int i = -1; i <= 1; i++) {
 			for (int j = -1; j <= 1; j++) {
@@ -59,12 +59,12 @@ public class BoggleSolver {
 				}
 
 				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					dfs(board, row + i, col + j, marked, word, set);
+					dfs(board, row + i, col + j, markedArray, word, set);
 				}
 			}
 		}
 
-		marked[row][col] = false;
+		markedArray[row][col] = false;
 	}
 // Returns the score of the given word if it is in the dictionary, zero otherwise.
 // (You can assume the word contains only the uppercase letters A through Z.)
