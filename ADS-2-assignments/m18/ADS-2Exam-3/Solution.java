@@ -172,7 +172,15 @@ class T9 {
    */
   public Iterable<String> potentialWords(final String t9Signature) {
     // your code goes here
-
+    HashMap objectMap = new HashMap<Integer, String>();
+    objectMap.put(2, "abc");
+    objectMap.put(3, "def");
+    objectMap.put(4, "ghi");
+    objectMap.put(5, "jkl");
+    objectMap.put(6, "mno");
+    objectMap.put(7, "pqrs");
+    objectMap.put(8, "tuv");
+    objectMap.put(9, "xyz");
     return null;
   }
 
@@ -193,7 +201,7 @@ class T9 {
       = new BinarySearchST<Integer, String>();
     int count = 0;
     for (String each : words) {
-      Integer frequency = wordsTst.get(each);
+      int frequency = wordsTst.get(each);
       if (st.contains(frequency) && count != 0) {
         String word = st.get(frequency);
         if (word.length() > each.length()) {
@@ -203,31 +211,31 @@ class T9 {
       st.put(frequency, each);
       count += 1;
     }
-    Bag<String> bagOfWords = new Bag<String>();
-    String[] ascendingOrder = new String[4];
-    for (int j = 0; j < k; j++) {
-      Integer i = st.max();
-      ascendingOrder[j] = st.get(i);
+    Bag<String> bag = new Bag<String>();
+    String[] array = new String[4];
+    for (int i = 0; i < k; i++) {
+      int j = st.max();
+      array[i] = st.get(j);
       st.deleteMax();
     }
-    Arrays.sort(ascendingOrder);
+    Arrays.sort(array);
     for (int n = k - 1; n >= 0; n--) {
-      bagOfWords.add(ascendingOrder[n]);
+      bag.add(array[n]);
     }
-    return bagOfWords;
-}
-    // final output
-    // Don't modify this method.
-
-    /**
-     * t9 dictionary.
-     *
-     * @param      t9Signature  The t 9 signature
-     * @param      k            The int.
-     *
-     * @return     returns iterrable string.
-     */
-    public Iterable<String> t9(final String t9Signature, final int k) {
-      return getSuggestions(potentialWords(t9Signature), k);
-    }
+    return bag;
   }
+  // final output
+  // Don't modify this method.
+
+  /**
+   * t9 dictionary.
+   *
+   * @param      t9Signature  The t 9 signature
+   * @param      k            The int.
+   *
+   * @return     returns iterrable string.
+   */
+  public Iterable<String> t9(final String t9Signature, final int k) {
+    return getSuggestions(potentialWords(t9Signature), k);
+  }
+}
