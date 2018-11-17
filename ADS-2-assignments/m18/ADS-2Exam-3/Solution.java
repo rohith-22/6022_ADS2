@@ -133,10 +133,16 @@ class T9 {
     }
   }
 
-  // get all the prefixes that match with given prefix.
+  /**
+   * Gets all words.
+   *
+   * @param      prefix  The prefix
+   *
+   * @return     All words.
+   */
   public Iterable<String> getAllWords(String prefix) {
     // your code goes here
-    return null;
+    return words.keysWithPrefix(prefix);
   }
 
   public Iterable<String> potentialWords(String t9Signature) {
