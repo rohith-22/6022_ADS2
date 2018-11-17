@@ -1,8 +1,7 @@
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:144:3: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:193:49: Must have at least one statement. [EmptyBlock]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
