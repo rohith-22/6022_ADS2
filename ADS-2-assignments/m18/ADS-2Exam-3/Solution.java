@@ -128,8 +128,8 @@ class T9 {
 
     words = new TST();
 
-    for (String word : st.keys()) {
-      words.put(word, st.get(word));
+    for (String each : st.keys()) {
+      words.put(each, st.get(each));
     }
   }
 
