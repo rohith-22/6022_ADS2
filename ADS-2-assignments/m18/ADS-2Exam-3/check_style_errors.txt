@@ -1,15 +1,7 @@
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:145:3: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:177:19: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:178:19: '4' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:179:19: '5' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:180:19: '6' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:181:19: '7' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:182:19: '8' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:183:19: '9' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:215:33: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

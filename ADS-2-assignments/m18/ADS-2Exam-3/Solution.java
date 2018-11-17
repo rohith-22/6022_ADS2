@@ -172,15 +172,18 @@ class T9 {
    */
   public Iterable<String> potentialWords(final String t9Signature) {
     // your code goes here
-    HashMap objectMap = new HashMap<Integer, String>();
-    objectMap.put(2, "abc");
-    objectMap.put(3, "def");
-    objectMap.put(4, "ghi");
-    objectMap.put(5, "jkl");
-    objectMap.put(6, "mno");
-    objectMap.put(7, "pqrs");
-    objectMap.put(8, "tuv");
-    objectMap.put(9, "xyz");
+    HashMap objectMap = new HashMap<Integer, String[]>();
+    final int two = 2, three = 3, four = 4, five = 5, six = 6,
+    seven = 7, eight = 8, nine = 9;
+
+    objectMap.put(two, "abc");
+    objectMap.put(three, "def");
+    objectMap.put(four, "ghi");
+    objectMap.put(five, "jkl");
+    objectMap.put(six, "mno");
+    objectMap.put(seven, "pqrs");
+    objectMap.put(eight, "tuv");
+    objectMap.put(nine, "xyz");
     return null;
   }
 
@@ -212,7 +215,7 @@ class T9 {
       count += 1;
     }
     Bag<String> bag = new Bag<String>();
-    String[] array = new String[4];
+    String[] array = new String[k];
     for (int i = 0; i < k; i++) {
       int j = st.max();
       array[i] = st.get(j);
