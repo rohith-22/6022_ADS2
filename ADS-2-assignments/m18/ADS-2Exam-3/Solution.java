@@ -142,7 +142,7 @@ class T9 {
    *
    * @param      st    symbol table.
    */
-  public T9(final BinarySearchST<String, Integer> st) {
+   T9(final BinarySearchST<String, Integer> st) {
     // your code goes here
 
     wordsTst = new TST();
