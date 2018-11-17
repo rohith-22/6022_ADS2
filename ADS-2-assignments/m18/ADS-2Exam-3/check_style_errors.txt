@@ -1,7 +1,9 @@
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:193:49: Must have at least one statement. [EmptyBlock]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:2:8: Unused import - java.util.HashMap. [UnusedImports]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:145:3: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:207:42: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
