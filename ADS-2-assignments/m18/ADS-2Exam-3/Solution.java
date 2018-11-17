@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.HashMap;
 /**
  * Class for solution.
  */
@@ -6,7 +7,9 @@ public final class Solution {
   /**
    * Don't modify this method.
   */
-
+  private Solution() {
+    // unused.
+  }
   /**
    * main function to handle testcases.
    *
@@ -132,7 +135,7 @@ class T9 {
   /**
    * private TST object.
    */
-  private TST<Integer> words;
+  private TST<Integer> wordsTst;
   /**
    * Constructs the object.
    *
@@ -141,10 +144,10 @@ class T9 {
   public T9(final BinarySearchST<String, Integer> st) {
     // your code goes here
 
-    words = new TST();
+    wordsTst = new TST();
 
     for (String each : st.keys()) {
-      words.put(each, st.get(each));
+      wordsTst.put(each, st.get(each));
     }
   }
 
@@ -157,7 +160,7 @@ class T9 {
    */
   public Iterable<String> getAllWords(final String prefix) {
     // your code goes here
-    return words.keysWithPrefix(prefix);
+    return wordsTst.keysWithPrefix(prefix);
   }
   /**
    * checks for potential words.
@@ -168,6 +171,7 @@ class T9 {
    */
   public Iterable<String> potentialWords(final String t9Signature) {
     // your code goes here
+
     return null;
   }
 
@@ -184,6 +188,12 @@ class T9 {
   public Iterable<String> getSuggestions(final Iterable<String> words,
                                          final int k) {
     // your code goes here
+    HashMap objectMap = new HashMap<String, Integer>();
+    for (String each : words) {
+      for (String eachWord : getAllWords(each)) {
+      }
+    }
+
     return null;
   }
 
@@ -194,7 +204,7 @@ class T9 {
    * t9 dictionary.
    *
    * @param      t9Signature  The t 9 signature
-   * @param      k            { parameter_description }
+   * @param      k            The int.
    *
    * @return     returns iterrable string.
    */
