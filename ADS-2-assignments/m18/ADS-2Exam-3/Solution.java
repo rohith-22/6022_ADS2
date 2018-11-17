@@ -6,6 +6,12 @@ public final class Solution {
   /**
    * Don't modify this method.
   */
+
+  /**
+   * main function to handle testcases.
+   *
+   * @param      args  The arguments
+   */
   public static void main(final String[] args) {
     Scanner scan = new Scanner(System.in);
     String cases = scan.nextLine();
@@ -82,6 +88,14 @@ public final class Solution {
   }
   /**
    * Don't modify this method.
+   */
+
+  /**
+   * reads the file.
+   *
+   * @param      file  The file
+   *
+   * @return     string array of files
    */
   public static String[] toReadFile(final String file) {
     In in = new In(file);

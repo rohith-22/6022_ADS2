@@ -1,12 +1,9 @@
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:9:42: Expected @param tag for 'args'. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:86: Expected @return tag. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:86:50: Expected @param tag for 'file'. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:127:3: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:170:65: 'words' hides a field. [HiddenField]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:141:3: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:184:65: 'words' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]
