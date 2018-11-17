@@ -2,23 +2,11 @@ Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:9:42: Expected @param tag for 'args'. [JavadocMethod]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:86: Expected @return tag. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:86:37: Parameter file should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:86:44: Expected @param tag for 'file'. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:97:64: Parameter file should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:126:3: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:126:13: Parameter st should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:143:39: Parameter prefix should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:148:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:148:42: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:154:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:154:42: Parameter words should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:154:59: 'words' hides a field. [HiddenField]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:154:66: Parameter k should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:161:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:161:30: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:161:50: Parameter k should be final. [FinalParameters]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:86:50: Expected @param tag for 'file'. [JavadocMethod]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:127:3: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Solution.java:170:65: 'words' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m18/ADS-2Exam-3/Queue.java:32: Line is longer than 80 characters (found 106). [LineLength]
