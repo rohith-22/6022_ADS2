@@ -1,25 +1,7 @@
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:38: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:39: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:55: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:88: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:89: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:114:30: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:115:30: '4' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:117:30: '5' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:119:30: '6' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:120:40: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:121:30: '7' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:122:40: '5' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:124:40: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 14 errors.
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:6: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 2 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
