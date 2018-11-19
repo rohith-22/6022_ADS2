@@ -1,44 +1,25 @@
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:4:3: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:5:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:5:23: Parameter dictionary should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:15:3: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:15:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:15:44: Parameter board should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29:20: Parameter board should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29:39: Parameter row should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29:48: Parameter col should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29:57: Parameter markedArray should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29:82: Parameter prefix should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:29:97: Parameter set should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:59: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:67: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:69:3: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:69:3: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:69:22: Parameter word should be final. [FinalParameters]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:76:12: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:77:12: '4' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:79:12: '5' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:81:12: '6' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:82:16: '3' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:83:12: '7' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:84:16: '5' is a magic number. [MagicNumber]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:86:16: '11' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:38: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:39: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:55: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:88: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:89: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:114:30: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:115:30: '4' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:117:30: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:119:30: '6' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:120:40: '3' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:121:30: '7' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:122:40: '5' is a magic number. [MagicNumber]
+[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/BoggleSolver.java:124:40: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /Users/rohithkumar/Desktop/git/6022_ADS2/ADS-2-assignments/m16/boggle/Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
